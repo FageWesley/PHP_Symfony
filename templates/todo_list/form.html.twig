@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+
+
+{% block body  %}
+
+{{ form_start(form) }}
+
+    {{ form_label(form.name, {'attr': {'class': 'fs-1'}}) }}
+    {{ form_row(form.name) }}
+    {{ form_row(form.color) }}
+    <input type="submit" value="Créer" class="btn btn-primary">
+
+{{ form_end(form) }}
+
+{% endblock %}
